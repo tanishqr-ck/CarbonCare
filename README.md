@@ -1,73 +1,138 @@
-# To Install and Run the Project
+# CarbonCare :A Decentralized carbon credit marketplace
 
-1. start local dfx
 
-```
-dfx start --clean
-```
 
-2. Run NPM server
+## Overview
 
-```
-npm start
-```
+This Trading Platform for carbon credits is based on decentralized web technology. “CarbonCare”  is decentralized carbon credit marketplace backed with Dfinity ICP Blockchain. 
 
-3. Deploy canisters
+Users can trade the carbon credits based on their carbon emissions and help protect their net profits at the same time. 
 
-```
-dfx deploy --argument='("CryptoDunks #123", principal "gbdev-tyqsv-hnvqv-7mgz4-4kcfl-wbv6x-6khez-y56gq-uohqs-quomc-uqe", (vec {137; 80; 78; 71; 13; 10; 26; 10; 0; 0; 0; 13; 73; 72; 68; 82; 0; 0; 0; 10; 0; 0; 0; 10; 8; 6; 0; 0; 0; 141; 50; 207; 189; 0; 0; 0; 1; 115; 82; 71; 66; 0; 174; 206; 28; 233; 0; 0; 0; 68; 101; 88; 73; 102; 77; 77; 0; 42; 0; 0; 0; 8; 0; 1; 135; 105; 0; 4; 0; 0; 0; 1; 0; 0; 0; 26; 0; 0; 0; 0; 0; 3; 160; 1; 0; 3; 0; 0; 0; 1; 0; 1; 0; 0; 160; 2; 0; 4; 0; 0; 0; 1; 0; 0; 0; 10; 160; 3; 0; 4; 0; 0; 0; 1; 0; 0; 0; 10; 0; 0; 0; 0; 59; 120; 184; 245; 0; 0; 0; 113; 73; 68; 65; 84; 24; 25; 133; 143; 203; 13; 128; 48; 12; 67; 147; 94; 97; 30; 24; 0; 198; 134; 1; 96; 30; 56; 151; 56; 212; 85; 68; 17; 88; 106; 243; 241; 235; 39; 42; 183; 114; 137; 12; 106; 73; 236; 105; 98; 227; 152; 6; 193; 42; 114; 40; 214; 126; 50; 52; 8; 74; 183; 108; 158; 159; 243; 40; 253; 186; 75; 122; 131; 64; 0; 160; 192; 168; 109; 241; 47; 244; 154; 152; 112; 237; 159; 252; 105; 64; 95; 48; 61; 12; 3; 61; 167; 244; 38; 33; 43; 148; 96; 3; 71; 8; 102; 4; 43; 140; 164; 168; 250; 23; 219; 242; 38; 84; 91; 18; 112; 63; 0; 0; 0; 0; 73; 69; 78; 68; 174; 66; 96; 130;}))'
-```
+This opens a whole new industry that can work for credit generation and gives a great boost to renewable sector to structure their production in such a way so as to make core and non-core income that can reflect on their balance sheets. 
 
-4. Head to localhost
+This project provides functionalities of issuing tickets to companies through their internet identity after satisfying criteria of lesser emissions and then these companies can mint carbon credits equal to the ticket size . These carbon credits can be sold or kept with the issuer itself in de-materialized form. 
 
-http://localhost:8080/
+In case these credits are available for buying, the buyer can buy these credits using raptor tokens and then redeem them for increasing industrial output. 
 
-# Minter Else HTML
+The project also features a discuss section which can be used by the companies to discuss various issues comprising pricing, ticket size and buying-selling convenience(uses Disqus) . This project also has an AI assistant which is powered by Chatbase.
 
-```
- <div className="minter-container">
-        <h3 className="Typography-root makeStyles-title-99 Typography-h3 form-Typography-gutterBottom">
-          Minted!
-        </h3>
-        <div className="horizontal-center">
-        </div>
-      </div>
 
-```
 
-# Loader HTML
+##  Requirements and Setup 
 
-```
-<div className="lds-ellipsis">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-```
+1. #### Requirements 
 
-# Button HTML
+- Linux Environment(WSL2 on windows) 
+- DFX – Local simulation of actual blockchain 
+- Nodejs 
+- VS Code (Or Any other editor) 
+- Motoko Extensions 
+- React
 
-```
-<div className="Chip-root makeStyles-chipBlue-108 Chip-clickable">
-            <span
-              onClick={}
-              className="form-Chip-label"
-            >
-              Sell
-            </span>
-            </div>
-```
+2. #### Configuration and Installation 
 
-# Price Input HTML
+` `If the OS is Windows,we need to install WSL2 and install any linux distro(We will use Ubuntu).  
 
-```
-<input
-        placeholder="Price in DANG"
-        type="number"
-        className="price-input"
-        value={}
-        onChange={}
-      />
-```
-<span className="purple-text"> {sellStatus}</span>
+1.Install npm to install node and other dependencies.            
+
+ `$ sudo apt install npm nodejs` 
+
+2. Ensure whether npm is properly installed on the system. 
+3. Install dfx(DFINITY command-line execution environment) 
+
+`            ``$ sh -ci "$(curl -fsSL https://internetcomputer.org/install.sh)"` 
+
+Once dfx environment have been succesfully installed, we are ready to make our project. 
+
+CarbonCare DApp can be created by:                            
+
+`$ dfx new carboncare` 
+
+4. Install dependiencies, run: 
+
+`                            ``$npm install <dependencies>`  -         to install all dependencies. 
+
+5. Start local simulation of ICP by : 
+
+`                             ``$dfx start` 
+
+6. Deploy the code into the canisters after development:  
+
+`                              ``$dfx deploy` 
+
+7. Now fire up the frontend by : 
+
+`                               ``$npm start` 
+
+` `We are now ready to interact with the DApp . We will take this forward in the way , a user will normally react the platform. 
+
+
+
+##   Internet Identity 
+
+Internet Identity revolves around how individuals establish and authenticate their identities on the internet to securely access digital services. It primarily involves two key components: authentication and authorization. 
+
+ As soon as we open our project we are redirected to internet identity for identification. Get an internet identity to proceed.
+
+
+
+## Get Ticket to mint credit
+
+Carbon credits can not be minted directly as the issuing company must be eligible for minting credits and has gained approval from concerned authority that the carbon emission by the respective company is less and is net carbon positive. 
+
+In this application, tickets serve as a form of license that grants companies the authority to issue carbon credits. These tickets essentially act as a mechanism to authenticate and validate the legitimacy of the carbon credits being issued within the app. The term "pegged nature" refers to the fact that these tickets are firmly anchored or linked to a tangible source, ensuring their credibility and reliability. 
+
+(You can get your principal id by:-
+
+`$dfx identity get-principal`)
+
+This can be done by:-
+
+`$  dfx canister call carbonCare\_backend issueTicket '(100)'` -  This gives 100 credit 
+
+ticket to the user.
+
+If a malicious user tries to mint carbon credits with ticket or the ticket value is not equal to the listing number , It is immediately prohibited from doing so. 
+
+
+
+##  ‘Raptor’ Token
+
+Raptor Coin (RPT) is a tradable token built on the Internet Computer Dfinity Blockchain (ICP). Designed with a focus on decentralization and pseudonymity, Raptor Coin can be used for a variety of purposes, including as a medium of exchange, for holding equity in Decentralized Autonomous Organizations (DAOs), and for the exchange of services. The token leverages the unique features of the Internet Computer blockchain, including orthogonal persistence, to create a robust and efficient decentralized application (DApp). 
+
+In this project this token is used to trade carbon credits. 
+
+These issued tokens can then be used to trade carbon credits. These can be issued as:- 
+
+`$  CANISTER\_PUBLIC\_KEY="principal \"$( \dfx canister id carbonCare\_backend )\""` 
+
+`$ dfx canister call carbonCare\_backend transfer "($CANISTER\_PUBLIC\_KEY, 500\_000\_000)"` 
+
+
+
+## Tweaks
+
+Since the application does not allow repurchasing of credits we need to mint from backend so that the buy functionality appears and we can carry out the transaction .
+
+By  implementing  the  functionality  to  mint  carbon  credits  from  the  backend,  the  carbon  credit marketplace application enhances its capability to meet user demand, facilitate transactions, and support sustainable  initiatives  effectively.  This  backend-driven  approach  ensures  flexibility,  control,  and compliance while enabling seamless user interactions within the platform. 
+
+These tweaks can be done as :- 
+
+Screenshots:- 
+
+`$ dfx canister call carbonCare\_backend mint "("Elxsi","100")"` 
+
+Then to list this we use: 
+
+`$ dfx canister call carbonCare\_backend listItem '(principal "dxfxs-weaaa-aaaaa- qaapa-cai",3)'` 
+
+
+
+## Trade
+
+You can now trade the credits.
+
+
+
+
+
