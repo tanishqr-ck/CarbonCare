@@ -1,0 +1,33 @@
+{
+  "canisters": {
+    "carbonCare_backend": {
+      "main": "src/carbonCare_backend/main.mo",
+      "type": "motoko"
+    },
+    "credit": {
+      "main": "src/carbonCare_backend/Credit/credit.mo",
+      "type": "motoko"
+    },
+    "carbonCare_frontend": {
+      "dependencies": [
+        "carbonCare_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/carbonCare_frontend/src/index.html"
+      },
+      "source": [
+        "src/carbonCare_frontend/assets",
+        "dist/carbonCare_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
