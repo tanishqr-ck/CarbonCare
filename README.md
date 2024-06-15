@@ -31,7 +31,7 @@ The project also features a discuss section which can be used by the companies t
 
 2. #### Configuration and Installation 
 
-` `If the OS is Windows,we need to install WSL2 and install any linux distro(We will use Ubuntu).  
+If the OS is Windows,we need to install WSL2 and install any linux distro(We will use Ubuntu).  
 
 1.Install npm to install node and other dependencies.            
 
@@ -40,7 +40,7 @@ The project also features a discuss section which can be used by the companies t
 2. Ensure whether npm is properly installed on the system. 
 3. Install dfx(DFINITY command-line execution environment) 
 
-`            ``$ sh -ci "$(curl -fsSL https://internetcomputer.org/install.sh)"` 
+`$ sh -ci "$(curl -fsSL https://internetcomputer.org/install.sh)"` 
 
 Once dfx environment have been succesfully installed, we are ready to make our project. 
 
@@ -50,21 +50,19 @@ CarbonCare DApp can be created by:
 
 4. Install dependiencies, run: 
 
-`                            ``$npm install <dependencies>`  -         to install all dependencies. 
+`$npm install <dependencies>`  -         to install all dependencies. 
 
 5. Start local simulation of ICP by : 
 
-`                             ``$dfx start` 
+`$dfx start` 
 
 6. Deploy the code into the canisters after development:  
-
-`                              ``$dfx deploy` 
+`$dfx deploy` 
 
 7. Now fire up the frontend by : 
+`$npm start` 
 
-`                               ``$npm start` 
-
-` `We are now ready to interact with the DApp . We will take this forward in the way , a user will normally react the platform. 
+We are now ready to interact with the DApp . We will take this forward in the way , a user will normally react the platform. 
 
 
 
