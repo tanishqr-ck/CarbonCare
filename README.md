@@ -17,19 +17,7 @@ In case these credits are available for buying, the buyer can buy these credits 
 The project also features a discuss section which can be used by the companies to discuss various issues comprising pricing, ticket size and buying-selling convenience(uses Disqus) . This project also has an AI assistant which is powered by Chatbase.
 
 
-
-##  Requirements and Setup 
-
-1. #### Requirements 
-
-- Linux Environment(WSL2 on windows) 
-- DFX – Local simulation of actual blockchain 
-- Nodejs 
-- VS Code (Or Any other editor) 
-- Motoko Extensions 
-- React
-
-2. #### Configuration and Installation 
+ ## Configuration and Installation 
 
 If the OS is Windows,we need to install WSL2 and install any linux distro(We will use Ubuntu).  
 
@@ -44,13 +32,11 @@ If the OS is Windows,we need to install WSL2 and install any linux distro(We wil
 
 Once dfx environment have been succesfully installed, we are ready to make our project. 
 
-CarbonCare DApp can be created by:                            
-
-`$ dfx new carboncare` 
+navigate to project.                           
 
 4. Install dependiencies, run: 
 
-`$npm install <dependencies>`  -         to install all dependencies. 
+`$npm i`  -         to install all dependencies. 
 
 5. Start local simulation of ICP by : 
 
@@ -62,7 +48,7 @@ CarbonCare DApp can be created by:
 7. Now fire up the frontend by : 
 `$npm start` 
 
-We are now ready to interact with the DApp . We will take this forward in the way , a user will normally react the platform. 
+We are now ready to interact with the DApp on localhost.
 
 
 
@@ -115,8 +101,6 @@ Since the application does not allow repurchasing of credits we need to mint fro
 By  implementing  the  functionality  to  mint  carbon  credits  from  the  backend,  the  carbon  credit marketplace application enhances its capability to meet user demand, facilitate transactions, and support sustainable  initiatives  effectively.  This  backend-driven  approach  ensures  flexibility,  control,  and compliance while enabling seamless user interactions within the platform. 
 
 These tweaks can be done as :- 
-
-Screenshots:- 
 
 `$ dfx canister call carbonCare\_backend mint "("Elxsi","100")"` 
 
